@@ -18,8 +18,7 @@ function exportS3(){
     var sheet = doc.getActiveSheet();
     var json = getRowsData_(sheet);
     
-    var date = new Date(),
-    year = date.getFullYear();
+    year = <<Current Year>>;
     
     s3.putObject("interactives.dallasnews.com", "data-store/"+year+"/"+doc.getName()+".json",json, {logRequests:true});
     
