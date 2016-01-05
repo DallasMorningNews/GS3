@@ -12,7 +12,7 @@ The script turns a Google spreadsheet into JSON data and exports it to a bucket 
 4. Enter the following library code for Schultink's S3 binding in "Find a Library" and click "Select".
   - MB4837UymyETXyn8cv3fNXZc9ncYTrHL9
 5. Select the most recent version from the dropdown for the S3 library and click "Save".
-6. Paste the gs3.gs code into you script window, replace the AccessKey and SecretKey placeholders with you AWS credentials and save.
+6. Paste the gs3.gs code into you script window, replace the AccessKey and SecretKey placeholders with you AWS credentials and save, and set the "year" variable to the current year.
 7. You may edit the `s3.putObject(...);` statement to customize the directory you will write your spreadsheet to.
 8. Refresh your spreadsheet and the "Publish Data" button should appear.
 9. Export your data (may have to authorize the app) and a dialog box will appear with the address where you can retrieve your JSON.
