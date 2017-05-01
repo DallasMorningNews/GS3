@@ -22,7 +22,7 @@ function exportS3(){
     
     s3.putObject("interactives.dallasnews.com", "data-store/"+year+"/"+doc.getName()+".json",json, {logRequests:true});
     
-    var upload_addy = "http://interactives.dallasnews.com/data-store/"+year+"/"+doc.getName()+".json";
+    var upload_addy = "https://interactives.dallasnews.com/data-store/"+year+"/"+doc.getName()+".json";
         
     SpreadsheetApp.getUi().alert("Your data was posted to "+upload_addy+" .");
     
